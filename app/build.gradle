@@ -8,7 +8,7 @@ apply plugin: 'androidx.navigation.safeargs.kotlin'
 android {
     compileSdkVersion 30
     defaultConfig {
-        applicationId 'xyz.pokkst.pokket'
+        applicationId 'cash.bit'
         minSdkVersion 17
         targetSdkVersion 30
         versionCode 1

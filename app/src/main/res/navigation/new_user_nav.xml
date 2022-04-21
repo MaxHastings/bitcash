@@ -6,7 +6,7 @@
     app:startDestination="@id/newUserFragment">
     <fragment
         android:id="@+id/newUserFragment"
-        android:name="xyz.pokkst.pokket.cash.ui.main.fragment.setup.NewUserFragment"
+        android:name="cash.bit.ui.main.fragment.setup.NewUserFragment"
         android:label="fragment_new_user"
         tools:layout="@layout/fragment_new_user">
         <action
@@ -18,7 +18,7 @@
     </fragment>
     <fragment
         android:id="@+id/newWalletFragment"
-        android:name="xyz.pokkst.pokket.cash.ui.main.fragment.setup.NewWalletFragment"
+        android:name="cash.bit.ui.main.fragment.setup.NewWalletFragment"
         android:label="fragment_new_wallet"
         tools:layout="@layout/fragment_new_wallet">
         <action
@@ -32,7 +32,7 @@
     </fragment>
     <fragment
         android:id="@+id/restoreWalletFragment"
-        android:name="xyz.pokkst.pokket.cash.ui.main.fragment.setup.RestoreWalletFragment"
+        android:name="cash.bit.ui.main.fragment.setup.RestoreWalletFragment"
         android:label="fragment_new_wallet"
         tools:layout="@layout/fragment_restore_wallet">
         <action
@@ -50,7 +50,7 @@
     </fragment>
     <fragment
         android:id="@+id/generatedSeedFragment"
-        android:name="xyz.pokkst.pokket.cash.ui.main.fragment.setup.GeneratedSeedFragment"
+        android:name="cash.bit.ui.main.fragment.setup.GeneratedSeedFragment"
         android:label="fragment_new_wallet"
         tools:layout="@layout/fragment_generated_seed">
         <argument
@@ -72,7 +72,7 @@
     </fragment>
     <fragment
         android:id="@+id/my_following_key"
-        android:name="xyz.pokkst.pokket.cash.ui.main.fragment.multisig.MyFollowingKeyFragment"
+        android:name="cash.bit.ui.main.fragment.multisig.MyFollowingKeyFragment"
         android:label="fragment_new_wallet"
         tools:layout="@layout/fragment_my_following_key">
         <argument
@@ -102,7 +102,7 @@
     </fragment>
     <fragment
         android:id="@+id/enter_other_following_keys"
-        android:name="xyz.pokkst.pokket.cash.ui.main.fragment.multisig.OtherFollowingKeysFragment"
+        android:name="cash.bit.ui.main.fragment.multisig.OtherFollowingKeysFragment"
         android:label="fragment_new_wallet"
         tools:layout="@layout/fragment_other_following_keys">
         <argument

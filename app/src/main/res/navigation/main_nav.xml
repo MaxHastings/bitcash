@@ -6,7 +6,7 @@
     app:startDestination="@id/mainFragment">
     <fragment
         android:id="@+id/mainFragment"
-        android:name="xyz.pokkst.pokket.cash.ui.main.MainFragment"
+        android:name="cash.bit.ui.main.MainFragment"
         android:label="fragment_main"
         tools:layout="@layout/fragment_main">
         <action
@@ -19,7 +19,7 @@
     </fragment>
     <fragment
         android:id="@+id/sendAmountFragment"
-        android:name="xyz.pokkst.pokket.cash.ui.main.fragment.send.SendAmountFragment"
+        android:name="cash.bit.ui.main.fragment.send.SendAmountFragment"
         android:label="fragment_send_amount"
         tools:layout="@layout/fragment_send_amount">
     </fragment>

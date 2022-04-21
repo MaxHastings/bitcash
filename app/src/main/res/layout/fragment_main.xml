@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     tools:context=".ui.main.MainFragment">
 
-    <xyz.pokkst.pokket.cash.ui.ToggleViewPager
+    <cash.bit.ui.ToggleViewPager
         android:id="@+id/view_pager"
         android:layout_width="match_parent"
         android:layout_height="0dp"

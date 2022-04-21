@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">pokket.cash</string>
+    <string name="app_name">bit.cash</string>
     <!-- no need -->
     <!-- android -->
     <!-- android -->
@@ -34,7 +34,7 @@
     <!-- android -->
     <!-- android -->
     <!-- android -->
-    <string name="copyright_u00a9_2020_pokkst">copyright © 2021 pokkst</string>
+    <string name="copyright_u00a9_2020_pokkst">copyright © 2021</string>
     <!-- android -->
     <string name="app_support">app support:</string>
     <!-- android -->
