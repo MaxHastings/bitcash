@@ -120,9 +120,9 @@
     <!-- checked -->
     <!-- checked -->
     <!-- checked -->
-    <string name="receive_money">receive money:</string>
+    <string name="receive_money">Receive</string>
     <!-- checked -->
-    <string name="send_money">send money:</string>
+    <string name="send_money">Send</string>
     <!-- checked -->
     <string name="new_wallet">new wallet</string>
     <!-- checked -->

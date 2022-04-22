@@ -12,12 +12,18 @@ import android.view.View
 import android.view.ViewGroup
 import android.view.Window
 import android.widget.*
-import androidx.activity.OnBackPressedCallback
 import androidx.annotation.Nullable
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.lifecycleScope
 import androidx.localbroadcastmanager.content.LocalBroadcastManager
 import androidx.navigation.fragment.findNavController
+import cash.bit.MainActivity
+import cash.bit.R
+import cash.bit.interactors.BalanceInteractor
+import cash.bit.interactors.TransactionInteractor
+import cash.bit.interactors.WalletInteractor
+import cash.bit.util.*
+import cash.bit.wallet.WalletManager
 import com.google.common.collect.ImmutableList
 import com.google.common.util.concurrent.FutureCallback
 import com.google.common.util.concurrent.Futures
@@ -45,13 +51,6 @@ import org.web3j.protocol.core.DefaultBlockParameterName
 import org.web3j.tx.Transfer
 import org.web3j.utils.Convert
 import org.web3j.utils.Numeric
-import cash.bit.MainActivity
-import cash.bit.R
-import cash.bit.interactors.BalanceInteractor
-import cash.bit.interactors.TransactionInteractor
-import cash.bit.interactors.WalletInteractor
-import cash.bit.util.*
-import cash.bit.wallet.WalletManager
 import java.math.BigDecimal
 import java.math.BigInteger
 import java.util.*
@@ -112,11 +111,6 @@ class SendAmountFragment : Fragment() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        activity?.onBackPressedDispatcher?.addCallback(this, object : OnBackPressedCallback(true) {
-            override fun handleOnBackPressed() {
-                (activity as? MainActivity)?.toggleSendScreen(false)
-            }
-        })
     }
 
     override fun onCreateView(

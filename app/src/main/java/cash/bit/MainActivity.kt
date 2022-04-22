@@ -14,16 +14,16 @@ import androidx.core.content.ContextCompat
 import androidx.lifecycle.Observer
 import androidx.lifecycle.lifecycleScope
 import androidx.localbroadcastmanager.content.LocalBroadcastManager
-import kotlinx.android.synthetic.main.activity_main.*
-import kotlinx.coroutines.Dispatchers
-import kotlinx.coroutines.launch
-import org.bitcoinj.crypto.DeterministicKey
-import org.bitcoinj.wallet.DeterministicKeyChain
 import cash.bit.interactors.BalanceInteractor
 import cash.bit.util.*
 import cash.bit.wallet.MultisigWalletStartupConfig
 import cash.bit.wallet.WalletManager
 import cash.bit.wallet.WalletStartupConfig
+import kotlinx.android.synthetic.main.activity_main.*
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.launch
+import org.bitcoinj.crypto.DeterministicKey
+import org.bitcoinj.wallet.DeterministicKeyChain
 import java.io.File
 import java.math.BigDecimal
 
@@ -202,17 +202,6 @@ class MainActivity : AppCompatActivity() {
                 )
             }
         })
-    }
-
-    override fun onBackPressed() {
-        if (!inFragment) {
-            val a = Intent(Intent.ACTION_MAIN)
-            a.addCategory(Intent.CATEGORY_HOME)
-            a.flags = Intent.FLAG_ACTIVITY_NEW_TASK
-            startActivity(a)
-        } else {
-            super.onBackPressed()
-        }
     }
 
     private fun refresh(sync: Int?) {

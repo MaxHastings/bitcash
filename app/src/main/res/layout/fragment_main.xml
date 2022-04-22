@@ -7,22 +7,58 @@
     android:layout_height="match_parent"
     tools:context=".ui.main.MainFragment">
 
-    <cash.bit.ui.ToggleViewPager
-        android:id="@+id/view_pager"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        app:layout_behavior="@string/appbar_scrolling_view_behavior"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toTopOf="@id/tabs"/>
 
-    <com.google.android.material.tabs.TabLayout
-        android:id="@+id/tabs"
+    <TableRow
+        android:id="@+id/tableRow"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@null"
-        app:tabBackground="@drawable/tab_selector"
-        app:tabGravity="center"
-        app:tabIndicatorHeight="0dp"
-        app:layout_constraintBottom_toBottomOf="parent"/>
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bch_balance">
+
+        <Button
+            android:id="@+id/send_button"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:layout_weight="0.5"
+            android:text="@string/send_money"
+            android:textSize="24sp"
+            android:typeface="normal" />
+
+        <Button
+            android:id="@+id/receive_button"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:layout_weight="0.5"
+            android:text="@string/receive_money"
+            android:textSize="24sp" />
+    </TableRow>
+
+    <TextView
+        android:id="@+id/fiat_balance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="$500.00"
+        android:textSize="48sp"
+        android:typeface="normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/bch_balance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="2.30080358 BCH"
+        android:textSize="20sp"
+        android:typeface="monospace"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fiat_balance" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

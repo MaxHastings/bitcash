@@ -16,11 +16,21 @@
                 android:name="address"
                 app:argType="string" />
         </action>
+        <action
+            android:id="@+id/nav_to_receive"
+            app:destination="@id/receiveAmountFragment">
+        </action>
     </fragment>
     <fragment
         android:id="@+id/sendAmountFragment"
         android:name="cash.bit.ui.main.fragment.send.SendAmountFragment"
         android:label="fragment_send_amount"
         tools:layout="@layout/fragment_send_amount">
+    </fragment>
+    <fragment
+        android:id="@+id/receiveAmountFragment"
+        android:name="cash.bit.ui.main.fragment.receive.ReceiveFragment"
+        android:label="fragment_receive_amount"
+        tools:layout="@layout/fragment_receive">
     </fragment>
 </navigation>

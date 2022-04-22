@@ -49,7 +49,6 @@
             app:layout_constrainedWidth="true" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
-
     <TextView
         android:id="@+id/pay_button"
         android:layout_width="40dp"
@@ -75,24 +74,6 @@
         android:layout_height="2dp"
         android:progressDrawable="@drawable/progress_blue"
         app:layout_constraintTop_toBottomOf="@id/appbar_info"/>
-
-    <!--<xyz.pokkst.pokket.cash.ui.ToggleViewPager
-        android:id="@+id/view_pager"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        app:layout_behavior="@string/appbar_scrolling_view_behavior"
-        app:layout_constraintTop_toBottomOf="@id/sync_progress_bar"
-        app:layout_constraintBottom_toTopOf="@id/tabs"/>
-
-    <com.google.android.material.tabs.TabLayout
-        android:id="@+id/tabs"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@null"
-        app:tabBackground="@drawable/tab_selector"
-        app:tabGravity="center"
-        app:tabIndicatorHeight="0dp"
-        app:layout_constraintBottom_toBottomOf="parent"/>-->
 
     <androidx.fragment.app.FragmentContainerView
         android:id="@+id/nav_host_fragment"
